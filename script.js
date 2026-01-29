@@ -10,7 +10,13 @@ const galleryData = [
         model: "Stable Diffusion XL", 
         type: "image", 
         image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop", 
-        prompt: "Photo of a young woman, natural skin texture, soft lighting, shot on 35mm lens, f/1.8, bokeh background, hyperrealistic" 
+        prompt: "Photo of a young woman, natural skin texture, soft lighting, shot on 35mm lens, f/1.8, bokeh background, hyperrealistic",
+        specs: { vram: "8GB", ram: "16GB", gpu: "RTX 3060+" },
+        detailSpecs: {
+            min: { gpu: "RTX 3060 (12GB)", ram: "16 GB DDR4", hdd: "512 GB SSD" },
+            rec: { gpu: "RTX 4070 (24GB)", ram: "32 GB DDR5", hdd: "1 TB NVMe" }
+        },
+        link: "https://seaart.ai/models/detail/sdxl-base-1-0"
     },
     { 
         id: 3, 
@@ -19,7 +25,9 @@ const galleryData = [
         model: "DALL-E 3", 
         type: "image", 
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop", 
-        prompt: "Astronaut floating in deep space, nebula background, digital art, vibrant colors, sci-fi concept" 
+        prompt: "Astronaut floating in deep space, nebula background, digital art, vibrant colors, sci-fi concept",
+        specs: { vram: "N/A (Cloud)", ram: "Free", gpu: "Browser Only" },
+        link: "https://www.bing.com/images/create"
     },
     { 
         id: 4, 
@@ -28,7 +36,13 @@ const galleryData = [
         model: "ComfyUI + SD 1.5", 
         type: "image", 
         image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto-format&fit=crop", 
-        prompt: "Epic fantasy landscape, floating islands, waterfalls, magical atmosphere, matte painting style, artstation trends" 
+        prompt: "Epic fantasy landscape, floating islands, waterfalls, magical atmosphere, matte painting style, artstation trends",
+        specs: { vram: "6GB", ram: "16GB", gpu: "GTX 1660+" },
+        detailSpecs: {
+            min: { gpu: "GTX 1660 (6GB)", ram: "8 GB DDR4", hdd: "20 GB SSD" },
+            rec: { gpu: "RTX 3060 (12GB)", ram: "16 GB DDR4", hdd: "50 GB SSD" }
+        },
+        link: "https://github.com/comfyanonymous/ComfyUI"
     },
     { 
         id: 5, 
@@ -37,7 +51,9 @@ const galleryData = [
         model: "Midjourney v5", 
         type: "image", 
         image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1000&auto-format&fit=crop", 
-        prompt: "Futuristic city skyline at night, flying cars, neon signs, rainy streets, blade runner vibe" 
+        prompt: "Futuristic city skyline at night, flying cars, neon signs, rainy streets, blade runner vibe",
+        specs: { vram: "N/A (Cloud)", ram: "Free", gpu: "Browser Only" },
+        link: "https://www.midjourney.com"
     },
     { 
         id: 6, 
@@ -46,7 +62,13 @@ const galleryData = [
         model: "SDXL + ControlNet", 
         type: "image", 
         image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000&auto-format&fit=crop", 
-        prompt: "Anime style illustration, girl running with toast in mouth, school uniform, morning sunlight, makoto shinkai style" 
+        prompt: "Anime style illustration, girl running with toast in mouth, school uniform, morning sunlight, makoto shinkai style",
+        specs: { vram: "8GB", ram: "16GB", gpu: "RTX 3060+" },
+        detailSpecs: {
+            min: { gpu: "RTX 2060 (6GB)", ram: "16 GB DDR4", hdd: "40 GB SSD" },
+            rec: { gpu: "RTX 3060 (12GB)", ram: "32 GB DDR4", hdd: "100 GB SSD" }
+        },
+        link: "https://github.com/lllyasviel/ControlNet"
     },
 
     // --- VIDEO (FILE LOKAL) ---
@@ -57,7 +79,9 @@ const galleryData = [
         model: "Sora", 
         type: "video", 
         videoUrl: "vidio1.mp4", 
-        prompt: "Aerial drone shot of crashing waves on a rocky cliff, sunset lighting, 4k resolution, smooth motion" 
+        prompt: "Aerial drone shot of crashing waves on a rocky cliff, sunset lighting, 4k resolution, smooth motion",
+        specs: { vram: "N/A (Cloud)", ram: "Free", gpu: "Browser Only" },
+        link: "https://openai.com/sora"
     },
     { 
         id: 8, 
@@ -66,7 +90,9 @@ const galleryData = [
         model: "Runway Gen-2", 
         type: "video", 
         videoUrl: "vidio2.mp4", 
-        prompt: "Liquid colors swirling and mixing, ink in water, slow motion, macro shot, vibrant colors, abstract art" 
+        prompt: "Liquid colors swirling and mixing, ink in water, slow motion, macro shot, vibrant colors, abstract art",
+        specs: { vram: "N/A (Cloud)", ram: "Free", gpu: "Browser Only" },
+        link: "https://runwayml.com"
     },
     { 
         id: 9, 
@@ -75,7 +101,9 @@ const galleryData = [
         model: "Pika Labs", 
         type: "video", 
         videoUrl: "vidio3.mp4", 
-        prompt: "Timelapse of city traffic at night, light trails, busy street, hyperlapse style" 
+        prompt: "Timelapse of city traffic at night, light trails, busy street, hyperlapse style",
+        specs: { vram: "N/A (Cloud)", ram: "Free", gpu: "Browser Only" },
+        link: "https://pika.art"
     },
     { 
         id: 10, 
@@ -84,7 +112,13 @@ const galleryData = [
         model: "AnimateDiff", 
         type: "video", 
         videoUrl: "vidio4.mp4", 
-        prompt: "Peaceful morning in a forest, sunbeams through trees, slight wind moving leaves, cinematic 4k" 
+        prompt: "Peaceful morning in a forest, sunbeams through trees, slight wind moving leaves, cinematic 4k",
+        specs: { vram: "8GB", ram: "16GB", gpu: "RTX 3060+" },
+        detailSpecs: {
+            min: { gpu: "RTX 3060 (12GB)", ram: "16 GB DDR4", hdd: "60 GB SSD" },
+            rec: { gpu: "RTX 4070 (12GB)", ram: "32 GB DDR5", hdd: "200 GB SSD" }
+        },
+        link: "https://github.com/guoyww/AnimateDiff"
     }
 ];
 
@@ -337,15 +371,46 @@ function updateModal(item) {
     document.getElementById('modalPrompt').innerText = item.prompt;
     document.getElementById('modalModelDetail').innerHTML = `<i class="fas fa-layer-group"></i> Model: <strong>${item.model}</strong>`;
 
+    const specDetails = document.getElementById('specDetails');
+    if (item.specs) {
+        specDetails.innerHTML = `
+            <span><i class="fas fa-memory"></i> ${item.specs.vram} VRAM</span>
+            <span><i class="fas fa-hdd"></i> ${item.specs.ram} RAM</span>
+            <span><i class="fas fa-microchip"></i> ${item.specs.gpu}</span>
+        `;
+    } else {
+        specDetails.innerHTML = '';
+    }
+
+    const dynamicBtn = document.getElementById('modalDynamicBtn');
+    const dynamicText = document.getElementById('dynamicText');
+    const dynamicIcon = document.getElementById('dynamicIcon');
     const badge = document.getElementById('modalBadge');
     if (item.category === 'cloud') {
         badge.innerText = 'PUBLIC CLOUD AI';
         badge.style.background = 'var(--accent-cloud)';
         badge.style.color = '#ffffff';
+
+        dynamicBtn.style.background = '#6366f1';
+        dynamicBtn.style.color = 'white';
+        dynamicBtn.href = item.link || '#';
+        dynamicBtn.onclick = null;
+        dynamicText.innerText = 'Jalankan di Web';
+        dynamicIcon.className = 'fas fa-external-link-alt';
     } else {
         badge.innerText = 'OFFLINE / LOCAL AI';
         badge.style.background = 'var(--accent-offline)';
         badge.style.color = '#000000';
+
+        dynamicBtn.style.background = 'var(--accent-offline)';
+        dynamicBtn.style.color = 'black';
+        dynamicBtn.href = 'javascript:void(0)';
+        dynamicBtn.onclick = (e) => {
+            e.preventDefault();
+            openSysReqModal(item);
+        };
+        dynamicText.innerText = 'Spesifikasi';
+        dynamicIcon.className = 'fas fa-microchip';
     }
 
     const container = document.getElementById('mediaContainer');
@@ -380,7 +445,28 @@ function closeModal() {
    11. MODAL SPEK PC
    ========================================= */
 const sysReq = document.getElementById('sysReqModal');
-function openSysReqModal() { sysReq.classList.add('active'); }
+function openSysReqModal(item) {
+    if (!item || !item.detailSpecs) return;
+
+    document.getElementById('sysReqTitle').innerHTML = `<i class="fas fa-desktop" style="color:var(--secondary)"></i> Spesifikasi ${item.model}`;
+    document.getElementById('sysReqSubtitle').innerText = `Kebutuhan sistem untuk menjalankan ${item.model}:`;
+
+    const minList = document.getElementById('minSpecList');
+    minList.innerHTML = `
+        <li><strong>GPU:</strong> ${item.detailSpecs.min.gpu}</li>
+        <li><strong>RAM:</strong> ${item.detailSpecs.min.ram}</li>
+        <li><strong>HDD:</strong> ${item.detailSpecs.min.hdd}</li>
+    `;
+
+    const recList = document.getElementById('recSpecList');
+    recList.innerHTML = `
+        <li><strong>GPU:</strong> ${item.detailSpecs.rec.gpu}</li>
+        <li><strong>RAM:</strong> ${item.detailSpecs.rec.ram}</li>
+        <li><strong>HDD:</strong> ${item.detailSpecs.rec.hdd}</li>
+    `;
+
+    sysReq.classList.add('active');
+}
 function closeSysReqModal() { sysReq.classList.remove('active'); }
 
 window.onclick = (e) => { 
