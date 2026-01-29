@@ -8,7 +8,7 @@ Kelas: INFORMATIKA
 
 ## Desain Figma
 Berikut adalah link desain UI/UX yang telah dibuat:  
-https://www.figma.com/design/nfExcV7h0ryObEs4EZg1ED/Untitled?node-id=0-1&t=PsTT0zBuFTKhMCec-1
+https://www.figma.com/design/nfExcV7h0ryObEs4EZg1ED/Untitled?node-id=0-1&p=f&t=pchDHEdvdJzSezwu-0
 
 ## 🔗 Link Demo Aplikasi
 Website ini sudah di-hosting dan dapat diakses melalui link berikut:  
